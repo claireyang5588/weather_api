@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=dj.name %>(<%=dj.sys.country%>)</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1><%=dj.name%> Weather Now</h1>
+    <h3>Lon:<%=dj.coord.lon%> Lat:<%=dj.coord.lat%></h3>
+
+    <table>
+      <tr>
+        <td>Main Weather</td>
+        <td><%= dj.weather[0].main%></td>
+      </tr>
+      <tr>
+        <td>Main Description</td>
+        <td><%= dj.weather[0].description%></td>
+      </tr>
+      <tr>
+        <td>Temperature</td>
+        <td><%= newTemp%> °C</td>
+      </tr>
+      <tr>
+        <td>Wind Speed</td>
+        <td><%= dj.wind.speed%> km/h</td>
+      </tr>
+    </table>
+    <div id="map"></div>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoLZcEH4NpZcSHNcJXGEdxydpr2fC7a6o&callback=initMap"
+    ></script>
+    <script>
+      function initMap() {
+        // The location of encounter
+        var location = {
+        //   lat: -25.344,
+        //   lng: 131.036,
+             lat:<%=dj.coord.lat  %>,
+             lng:<%= dj.coord.lon %>,
+        };
+        // The map, centered at encounter
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: location,
+        });
+        // The marker, positioned at encounter
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+    </script>
+    <BR />
+    <a href="http://localhost:3000/"> <button>Back To Homepage</button></a>
+  </body>
+</html>
