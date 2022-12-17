@@ -37,19 +37,16 @@
     ></script>
     <script>
       function initMap() {
-        // The location of encounter
         var location = {
-        //   lat: -25.344,
-        //   lng: 131.036,
              lat:<%=dj.coord.lat  %>,
              lng:<%= dj.coord.lon %>,
         };
-        // The map, centered at encounter
+
         var map = new google.maps.Map(document.getElementById("map"), {
           zoom: 4,
           center: location,
         });
-        // The marker, positioned at encounter
+
         var marker = new google.maps.Marker({
           position: location,
           map: map,
