@@ -21,4 +21,4 @@ https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{coun
 
 申請完成後點選❮憑證❯就會看到API 金鑰
 
-[Imgur](https://i.imgur.com/JqzOBRP.png)
+<a href="https://imgur.com/JqzOBRP"><img src="https://i.imgur.com/JqzOBRP.png" title="source: imgur.com" /></a>
