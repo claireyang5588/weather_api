@@ -1,4 +1,4 @@
-# weather_api
+# Weather API
 
 透過weather_api查詢即時天氣相關資訊
 
