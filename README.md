@@ -1,6 +1,6 @@
 # weather_api
 
-透過weather_api查詢即時天氣
+透過weather_api查詢即時天氣相關資訊
 
 註冊登入weather_api(https://openweathermap.org/api)，取得api key進行api呼叫
 
