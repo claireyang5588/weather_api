@@ -14,7 +14,7 @@ https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{coun
 
 請注意，按州搜索僅適用於美國位置。
 
-#Google Map API
+# Google Map API
 
 從Google Cloud Platform(GCP)https://cloud.google.com/console/google/maps-apis/overview?hl=zh-tw)
 申請，取得API Key，每個月有200美金的免費額度
