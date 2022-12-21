@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 
 const { CountQueuingStrategy } = require("node:stream/web");
 
+//輸入你的weather api的
 let key = key;
 
 //k to cel
