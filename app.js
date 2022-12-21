@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 
 const { CountQueuingStrategy } = require("node:stream/web");
 
-let key = "9d7b179e203a152b4bbe67ab2bb8f98e";
+let key = key;
 
 //k to cel
 function ktoC(k) {
